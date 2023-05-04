@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+h1{
+font-size:60px;
+padding:300px 0px 0px 350px;
+font-family:plain text;
+color:white;
+}
+h2{
+font-size:20px;
+padding:0px 50px 0px 50px;
+font-family:cooper;
+color:powderblue;
+}
+.button1{border-radius:10%;}
+</style>
+</head>
+<body background="money.jpg" style="border:10px solid silver;">
+<h1>ENTER THE MESSAGE and USERNAME</h1>
+<form method="post" action="message2.php">
+<center><h2>username<h2/><input oninvalid="alert('You must fill out the form!');" style="width: 1000px;height:30px;" type="text" placeholder="receiver's username" name="rusername" onfocus="txt()" id="txt" required></center><br>
+<center><h2>message</h2><input oninvalid="alert('You must fill out the form!');" style="width: 1000px;height:30px;" type="text" placeholder="type the message here" name="message" onfocus="txt()" id="txt" required></center><br>
+<center><button class="button1"><h2>next</h2></button></center>
+</form>
+<script>
+function txt
+{
+document.getElementById("txt").style.background=lightblue;
+}
+</script>
+</body>
+</html>

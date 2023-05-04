@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>login form</title>
+<style>
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color:#6abadeba;
+    font-family: 'Arial';
+}
+.login{
+        width: 382px;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background: #23463f;
+        border-radius: 15px ;
+
+}
+h2{
+    text-align: center;
+    color: #277582;
+    padding: 20px;
+}
+label{
+    color: #08ffd1;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+a{
+    float: right;
+    background-color: grey;
+}
+.button_css:active
+{
+background-color:;
+color:#111;
+background:#6abadeba;
+box-shadow:10px 5px #6abadeba;
+transform:translateY(4px);
+}
+</style>
+<body>
+    <h2>Login Page</h2><br>
+    <div class="login">
+    <form id="login" method="post" action="createtable.php">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username" onfocus="txt()" id="txt" >
+        <br><br>
+<br><br>
+        <input type="submit" value="submit" id=log class button_css>
+        <br><br>
+    </form>
+</div>
+<script>
+function txt()
+{
+document.getElementById("txt").style.background=lightblue;
+}
+</script>
+</body>
+</html>
